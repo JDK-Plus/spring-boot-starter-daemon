@@ -38,7 +38,7 @@ public @interface Scheduled {
      * 或数字格式，代表执行间隔.
      * @return x
      */
-    String value();
+    String expr();
 
     /**
      * 判定当前实例是否添加定时任务, 若startUp函数返回false，则后续不再执行

@@ -61,7 +61,7 @@ public class ScheduleInitFactory implements SchedulingConfigurer {
             if (!scheduledDecider.startUp(iScheduledInstance)) {
                 continue;
             }
-            String expression = scheduled.value();
+            String expression = scheduled.expr();
             if (expression.matches("[0-9]+")) {
                 long fixRate = Long.parseLong(expression);
                 eventTrigger = new PeriodicTrigger(fixRate * 1000);
