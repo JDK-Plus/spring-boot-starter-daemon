@@ -1,5 +1,6 @@
 package plus.jdk.scheduled.decider;
 
+import plus.jdk.scheduled.annotation.Scheduled;
 import plus.jdk.scheduled.global.IScheduled;
 
 public interface IScheduledDecider {
@@ -9,5 +10,5 @@ public interface IScheduledDecider {
      * @param iSchedule x
      * @return x
      */
-    boolean startUp(IScheduled iSchedule);
+    boolean startUp(IScheduled iSchedule, Scheduled scheduled);
 }

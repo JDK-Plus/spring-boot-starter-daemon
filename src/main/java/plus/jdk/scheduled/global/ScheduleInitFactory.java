@@ -58,7 +58,7 @@ public class ScheduleInitFactory implements SchedulingConfigurer {
             Scheduled scheduled = scheduledDefinition.getScheduled();
             IScheduledDecider scheduledDecider = beanFactory.getBean(scheduled.decider());
             IScheduled iScheduledInstance = scheduledDefinition.getBeanInstance();
-            if (!scheduledDecider.startUp(iScheduledInstance)) {
+            if (!scheduledDecider.startUp(iScheduledInstance, scheduled)) {
                 continue;
             }
             String expression = scheduled.expr();

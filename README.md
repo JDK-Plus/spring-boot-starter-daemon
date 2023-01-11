@@ -8,6 +8,6 @@ This is a springboot component that helps you quickly create daemon applications
 <dependency>
     <groupId>plus.jdk</groupId>
     <artifactId>spring-boot-starter-daemon</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.5</version>
 </dependency>
 ```
